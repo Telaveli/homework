@@ -20,4 +20,12 @@
 
      sudo apt update
      sudo apt install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+
+
+### რედაქტორი vi
+რედაქტირება vi-ს მეშვეობით ხდება i სიმბოლოთი <Esc> ღილაკის დაჭერამდე
+
+
+
+
  
