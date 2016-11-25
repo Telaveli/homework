@@ -3,6 +3,6 @@ using namespace std;
 
 int main()
 {
-  cout << "Моя первая программа на С++\n";
+  cout << "პირველი С++ პროგრამა\n";
   cin.get();
 }
