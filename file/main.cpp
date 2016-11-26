@@ -1,8 +1,11 @@
+#include "io.cpp"
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-  cout << "Моя первая программа на С++\n";
+  cout << "პირველი C++ პროგრამა\n";
+  read_file ();
   cin.get();
 }
