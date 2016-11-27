@@ -1,5 +1,3 @@
-// file.cpp: определяет точку входа для консольного приложения.
-
 #include "stdafx.h"
 #include <fstream>
 using namespace std;
