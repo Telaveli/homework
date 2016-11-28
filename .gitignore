@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+# wotk files
+*.txt
+*.doc
+*.conf
+*.db
