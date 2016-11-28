@@ -36,6 +36,4 @@ git clone https://github.com/Telaveli/homework.git
 
 ამის შემდეგ შეგვიძლია სერვერზე ავტვირთოთ ჩვენს მიერ განხორციელებული ცვლილებები
 
-        git pusd origin master
-
-        
+        git push origin master
