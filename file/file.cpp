@@ -20,7 +20,11 @@ int main(int argc, char* argv[])
         fout << "     data type      "   << "byte"                      << "      "    << "    max value  " << endl  // заголовки столбцов
              << "bool-ის ზომა                =  " << sizeof(bool)                << "         " << fixed << setprecision(2)          << (pow(2,sizeof(bool) * 8.0) - 1)        << endl;
         fout.close(); // პროგრამას როცა არ სჭირდება ფაილი, უნდა დაიხუროს
+  ofstream fin("data_types.txt", ios_base::in);
     cout << "მონაცემები ჩაიწერა ფაილში data_types.txt" << endl;
-    system("pause");
+    while (!fin.eof()) {
+      fin >> bufer;
+      std::cout << bufer << std::endl;
+    }
     return 0;
 }

@@ -14,6 +14,7 @@ int printArgvs (int argc, char const *argv[]) {
 
 }
 
+
 int main(int argc, char const *argv[]) {
 
   if (argc > 1) { // თუ რაიმე არგუმენტი მიეთითება, მაშინ შესრულდება ეს ბლოკი
