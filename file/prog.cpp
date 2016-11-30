@@ -24,7 +24,30 @@ for (int n=0; n<i; ++n)
 in_stream.close();
 }
 //***************************************************************************
+//***************************(calculator)**********************************<<
 
+void calculator(float x, float y);
+        float a, b, result;
+        char nishani;
+
+
+void calculator(float x, float y) {
+        a=x;
+        b=y;
+        switch (nishani) {
+                case '+': result = x + y;
+                          break;
+                case '-': result = x-y;
+                          break;
+                case '*': result = x*y;
+                          break;
+                case '/': result = x/y;
+                          break;
+                default: cout << "EROR" << endl;
+        }
+}
+
+//****************************************************************************
 int main()
 {
 int mnuItem = 0;
@@ -33,19 +56,25 @@ while (true) {
   std::cout << "\t│ამოირჩიე პროგრამა                 │" << std::endl;
   std::cout << "\t╞══════════════════════════════════╡" << std::endl;
   std::cout << "\t│1. ხსნის ფაილს                    │" << std::endl;
-  std::cout << "\t│2. მეორე პროგრამა                 │" << std::endl;
+  std::cout << "\t│2. კალკულატორი                    │" << std::endl;
 	cout<< "\t│0. გამოსვლა                       │" << endl;
   std::cout << "\t╘══════════════════════════════════╛" << std::endl;
 	cout <<"\t:";
   std::cin >> mnuItem;
   switch (mnuItem) {
-	case 0: {cout << "\t\nგამოვლა\n" << endl;break;}
+	case 0: {cout << "\t\nგამოსვლა\n" << endl;break;}
 	case 1: {cout << "\t\nვხსნი ფაილს\n" << endl;break;}
-	case 2: {cout << "\t\n მეორე მენიუ \n" << endl; break;}
+	case 2: {cout << "\t\n მაგ. 47*19\n" << endl; break;}
 	default: {cout <<"\t\nსწორად ამოირჩიე?\n" << endl;break;}
   }
 if (mnuItem == 1) {
 	prog1 ();
+	}
+if (mnuItem == 2) {
+
+	cin >>a>>nishani>>b;
+	calculator(a,b);
+	cout<<"\t"<<a<<nishani<<b<<"="<<result<<endl;
 	}
 if (mnuItem == 0) return 0;
   }
